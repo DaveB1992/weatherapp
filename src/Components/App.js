@@ -1,3 +1,5 @@
+import LocationDetails from './LocationDetails'
+
 const App = () => {
   return (
     <div className="App">
