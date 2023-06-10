@@ -1,11 +1,10 @@
+<App location = {forecast.location}/>
 import LocationDetails from './LocationDetails'
 
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Weather App</h1>
-      </header>
+        <LocationDetails />
     </div>
   );
 }
