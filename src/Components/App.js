@@ -1,12 +1,9 @@
-<App location = {forecast.location}/>
-import LocationDetails from './LocationDetails'
+import React from "react";
+import LocationDetails from "./LocationDetails";
 
-const App = () => {
-  return (
-    <div className="App">
-        <LocationDetails />
-    </div>
-  );
+function App({ location }) {
+  const { city, country } = location;
+  return <LocationDetails city={city} country={country} />;
 }
 
 export default App;
