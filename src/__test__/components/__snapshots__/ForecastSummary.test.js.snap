@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ForecastSummary renders 1`] = `
+exports[`ForecastSummary renders correctly 1`] = `
 <DocumentFragment>
   <div
     class="forecast-summary"
@@ -23,7 +23,7 @@ exports[`ForecastSummary renders 1`] = `
     <div
       class="forecast-summary__description"
     >
-      Stub Description
+      Stub description
     </div>
   </div>
 </DocumentFragment>
