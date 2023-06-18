@@ -17,8 +17,9 @@ exports[`ForecastSummary renders correctly 1`] = `
     >
       <img
         alt="icon"
+        src="https://openweathermap.org/img/wn/01d@2x.png"
       />
-      stubIcon
+      800
     </div>
     <div
       class="forecast-summary__temperature"
@@ -30,6 +31,11 @@ exports[`ForecastSummary renders correctly 1`] = `
     >
       Stub description
     </div>
+    <button
+      type="button"
+    >
+      More Details
+    </button>
   </div>
 </DocumentFragment>
 `;
