@@ -10,6 +10,10 @@ function App() {
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(forecasts[0].date);
+  const [searchText, setSearchText] = useState("");
+  const handleCitySearch = () => {
+    getForecast(setSelectedDate, setForecasts, setLocation);
+  };
 
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
