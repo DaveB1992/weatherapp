@@ -3,6 +3,7 @@ import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";
+import SearchForm from "../SearchForm/SearchForm";
 import "../Styles/App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="weather-app">
       <LocationDetails city={location.city} country={location.country} />
+      <SearchForm />
       <ForecastSummaries
         forecasts={forecasts}
         onForecastSelect={handleForecastSelect}
