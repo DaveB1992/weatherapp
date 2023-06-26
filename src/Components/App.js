@@ -5,7 +5,7 @@ import ForecastDetails from "./ForecastDetails";
 import getForecast from "../requests/getForecast";
 import "../Styles/App.css";
 
-function App(props) {
+function App() {
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(forecasts[0].date);
@@ -19,7 +19,7 @@ function App(props) {
   };
 
   useEffect(() => {
-    getForecast();
+    getForecast(setSelectedDate, setForecasts, setLocation);
   }, []);
 
   return (
