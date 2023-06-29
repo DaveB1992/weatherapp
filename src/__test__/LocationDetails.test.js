@@ -1,8 +1,8 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import App from "../../Components/App";
-import forecast from "../../data/forecast.json";
-import LocationDetails from "../../Components/LocationDetails";
+import App from "../Components/App";
+import forecast from "../data/forecast.json";
+import LocationDetails from "../Components/LocationDetails";
 
 describe("App", () => {
   test("renders App component correctly", () => {
